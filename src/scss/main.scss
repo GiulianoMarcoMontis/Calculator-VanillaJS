@@ -11,7 +11,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(315deg, #373737, #2e2e2e);
+  background: linear-gradient(45deg, #47443e, #55514a);
 }
 
 .calculator-grid {
@@ -21,48 +21,49 @@ body {
   min-height: 100vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-  gap: 0.2rem;
+  gap: 0.5rem;
 }
 
 .calculator-grid > button {
   cursor: pointer;
   font-size: 2rem;
-  border: 0.1rem solid goldenrod;
+  background: linear-gradient(45deg, #e9b122, #c4951d);
   border-radius: 1rem;
+  border: none;
   outline: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.75);
+  color: linear-gradient(45deg, #47443e, #55514a);
+  transition: all 1s ease-out;
 }
 
 .calculator-grid > button:hover {
-  background: linear-gradient(315deg, #a29f9f, #888686);
-  color: black;
+  background: linear-gradient(45deg, #c4951d, #e9b122);
+  color: linear-gradient(45deg, #47443e, #55514a);
 }
 
 .span-two {
   grid-column: span 2;
 }
 
-.output {
+.display {
   grid-column: 1 / -1;
   border: 0.1rem solid goldenrod;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgb(29, 29, 29);
   border-radius: 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
-  padding: 10px;
+  padding: 0.62rem;
   word-wrap: break-word;
   word-break: break-all;
 }
 
-.output .previous-operand {
-  color: rgba(255, 255, 255, 0.75);
+.previous {
+  color: rgb(240, 214, 148);
   font-size: 1.5rem;
 }
 
-.output .current-operand {
-  color: white;
+.current {
+  color: rgb(255, 183, 0);
   font-size: 2.5rem;
 }

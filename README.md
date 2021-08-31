@@ -1,4 +1,4 @@
-# [Calculator](https://dictionary-react-eight.vercel.app/)
+# [Calculator](https://giulianomarcomontis.github.io/Calculator-VanillaJS/)
 
 Calculator helps you getting your calculations correct.
 Just use your mouse to click on any operation you want to compute and you will get a result!
